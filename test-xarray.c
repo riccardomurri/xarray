@@ -4,7 +4,7 @@
  * Test cases for module @c xarray
  *
  * @author  riccardo.murri@gmail.com
- * @version $Revision$
+ * @version 1.0
  */
 /*
  * Copyright (c) 2010, 2011 riccardo.murri@gmail.com.  All rights reserved.
@@ -32,7 +32,7 @@
 #include <assert.h>
 
 typedef struct { int coord; double val; } entry_t;
-XARRAY_DECLARE(row, entry_t, int a; float b; char c);
+XARRAY_DECLARE(row, entry_t, int a; float b; char c;)
 
 
 /* check that `r` is an array of (n,n+1) pairs, sorted in ascending order. */
